@@ -4,7 +4,7 @@
 ## ⚙️ Main Components
 
 ### 1. `stg.pr_STG_Test_server.sql`
-[stg].[pr_STG_Test_server] is a control procedure that sequentially executes all necessary staging procedures to load data from the Production1 and Production2 databases (located on test_server) into the staging environment.
+[stg].[pr_STG_Test_server] is a store procedure that sequentially executes all necessary staging procedures to load data from the Production1 and Production2 databases (located on test_server) into the staging environment.
 
 ### 2. `pr_ProdToSTG_SCD_Standart`
 Executes a **standardized Slowly Changing Dimension (SCD)** logic with support for Type 1 and Type 2 changes using dynamic SQL.
