@@ -1,2 +1,58 @@
-# dwh-sql-etl-framework-
-A T-SQL metadata-driven ETL process for staging OLTP data before loading into a Data Warehouse.
+
+---
+
+## ⚙️ Main Components
+
+### 1. `pr_insert_StgTableColumn`
+Populates metadata for staging columns based on source and destination table structures.
+
+### 2. `pr_insert_StgTableColumn_Exec`
+Loops over the active `ProdToSTG` configurations and populates the `StgTableColumn` metadata dynamically.
+
+### 3. `pr_ProdToSTG_SCD_Standart`
+Executes a **standardized Slowly Changing Dimension (SCD)** logic with support for Type 1 and Type 2 changes using dynamic SQL.
+
+---
+
+## 💡 Purpose
+
+- Dynamically generate column metadata for staging
+- Automate the SCD logic (Type 1 and 2) using configuration tables
+- Centralize transformation logic before pushing to the core DWH
+
+---
+
+## 🔒 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 🌐 Multilingual Support
+
+The default documentation language is English. Future versions will include a localized README in Azerbaijani.
+
+---
+
+## 🧑‍💻 Author
+
+Developed by Elvin Aliyev  
+📍 Baku, Azerbaijan  
+📧 [adna.elvin@gmail.com]
+
+---
+
+## 🚧 Roadmap
+
+- [x] Build staging metadata logic
+- [x] Support for multiple OLTP source servers
+- [ ] Add DWH layer scripts (fact and dimension loading)
+- [ ] Create monitoring and logging mechanism
+- [ ] Include automated test cases
+
+---
+
+## 🤝 Contributions
+
+Feel free to fork, raise issues, or suggest enhancements. Contributions are welcome!
+
