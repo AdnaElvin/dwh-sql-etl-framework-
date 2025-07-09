@@ -28,12 +28,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](./LICEN
 
 ---
 
-## 🌐 Multilingual Support
-
-The default documentation language is English. Future versions will include a localized README in Azerbaijani.
-
----
-
 ## 🧑‍💻 Author
 
 Developed by Elvin Aliyev  
