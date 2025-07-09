@@ -3,7 +3,7 @@
 
 ## ⚙️ Main Components
 
-### 1. `Store Procedure/stg.pr_STG_Test_server.sql`
+### 1. `[stg.pr_STG_Test_server.sql](./Store Procedure/stg.pr_STG_Test_server.sql`
 stg.pr_STG_Test_server is a store procedure that sequentially executes all necessary staging procedures to load data from the Production1 and Production2 databases (located on test_server) into the staging environment.
 
 ### 2. `pr_ProdToSTG_SCD_Standart`
